@@ -85,6 +85,15 @@
 			<input type="submit" value="Wyślij"/>
 		</form> 
 		<br>
+		<br>
+		<h4>Utwórz katalog: </h4>
+		<form method="POST" action="dodajKat.php" ENCTYPE="multipart/form-data"> 
+			Nazwa katalogu: 
+			<input maxlength="32" type="text" name="nazwa">
+			<input type="hidden" name="sciezka" value="<?php echo $sciezka; ?>" />
+			<input type="submit" value="Utwórz"/>
+		</form> 
+		<br>
 		
   </body>
 </html>
